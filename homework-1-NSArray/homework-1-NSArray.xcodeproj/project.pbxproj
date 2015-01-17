@@ -18,6 +18,7 @@
 		089FB5E11A685A6200A5152C /* FINBicyclist.m in Sources */ = {isa = PBXBuildFile; fileRef = 089FB5E01A685A6200A5152C /* FINBicyclist.m */; };
 		089FB5E41A685C6300A5152C /* FINSwimmer.m in Sources */ = {isa = PBXBuildFile; fileRef = 089FB5E31A685C6300A5152C /* FINSwimmer.m */; };
 		089FB5E71A6865D700A5152C /* FINRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = 089FB5E61A6865D700A5152C /* FINRunner.m */; };
+		08E1D76F1A6AEC120009915E /* FINStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E1D76E1A6AEC120009915E /* FINStudent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		089FB5E31A685C6300A5152C /* FINSwimmer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FINSwimmer.m; sourceTree = "<group>"; };
 		089FB5E51A6865D700A5152C /* FINRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FINRunner.h; sourceTree = "<group>"; };
 		089FB5E61A6865D700A5152C /* FINRunner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FINRunner.m; sourceTree = "<group>"; };
+		08E1D76D1A6AEC120009915E /* FINStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FINStudent.h; sourceTree = "<group>"; };
+		08E1D76E1A6AEC120009915E /* FINStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FINStudent.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +99,8 @@
 			children = (
 				089FB5B81A684EF400A5152C /* AppDelegate.h */,
 				089FB5B91A684EF400A5152C /* AppDelegate.m */,
+				08E1D76D1A6AEC120009915E /* FINStudent.h */,
+				08E1D76E1A6AEC120009915E /* FINStudent.m */,
 				089FB5BB1A684EF400A5152C /* ViewController.h */,
 				089FB5BC1A684EF400A5152C /* ViewController.m */,
 				089FB5BE1A684EF400A5152C /* Main.storyboard */,
@@ -244,6 +249,7 @@
 				089FB5BD1A684EF400A5152C /* ViewController.m in Sources */,
 				089FB5DE1A68564D00A5152C /* FINPerson.m in Sources */,
 				089FB5E11A685A6200A5152C /* FINBicyclist.m in Sources */,
+				08E1D76F1A6AEC120009915E /* FINStudent.m in Sources */,
 				089FB5BA1A684EF400A5152C /* AppDelegate.m in Sources */,
 				089FB5E71A6865D700A5152C /* FINRunner.m in Sources */,
 				089FB5E41A685C6300A5152C /* FINSwimmer.m in Sources */,
@@ -440,6 +446,7 @@
 				089FB5D61A684EF400A5152C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		089FB5D71A684EF400A5152C /* Build configuration list for PBXNativeTarget "homework-1-NSArrayTests" */ = {
 			isa = XCConfigurationList;
@@ -448,6 +455,7 @@
 				089FB5D91A684EF400A5152C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

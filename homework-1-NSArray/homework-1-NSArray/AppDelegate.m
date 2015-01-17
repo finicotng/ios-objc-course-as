@@ -13,6 +13,8 @@
 #import "FINSwimmer.h"
 #import "FINRunner.h"
 
+#import "FINStudent.h"
+
 @interface AppDelegate ()
 
 @end
@@ -54,16 +56,44 @@
     NSArray *people = [NSArray arrayWithObjects:person, runner, bicyclist, swimmer, nil];
     
     for (FINPerson *face in people) {
-        NSLog(@"name: %@, height: %ld, weight: %.1f, gender: %@", face.name, (long)face.height, face.weight, face.gender);
+        NSLog(@"name: %@, height: %ld, weight: %.1f, gender: %@",
+              face.name, (long)face.height, face.weight, face.gender);
         [face move];
     }
     
     NSLog(@"=== END LEVEL PUPIL ===");
-    // END LEVEL PUPIL
     
     
     // LEVEL STUDENT
-    // END LEVEL STUDENT
+    NSLog(@"=== LEVEL STUDENT ===");
+    
+    FINStudent *student = [[FINStudent alloc] init];
+    [student setName:@"Veronica Stone"];
+    [student setHeight:178];
+    [student setWeight:54.3f];
+    [student setGender:@"female"];
+    [student setInstitution:@"Oxford University"];
+    [student setCourse:3];
+
+    NSArray *people2 = [NSArray arrayWithObjects:person, runner, bicyclist, swimmer, student, nil];
+    
+    for (NSInteger i = [people2 count] - 1; i > 0 ; i -= 1) {
+        
+        FINPerson *face = people2[i];
+        
+        if ([face isKindOfClass:[FINStudent class]]) {
+            FINStudent *student = (FINStudent *)face;
+            NSLog(@"name: %@, height: %ld, weight: %.1f, gender: %@, institution: %@, course: %ld",
+                  student.name, (long)student.height, student.weight, student.gender, student.institution, (long)student.course);
+        } else {
+            NSLog(@"name: %@, height: %ld, weight: %.1f, gender: %@",
+                  face.name, (long)face.height, face.weight, face.gender);
+        }
+        
+        [face move];
+    }
+    
+    NSLog(@"=== END LEVEL STUDENT ===");
     
     
     return YES;
